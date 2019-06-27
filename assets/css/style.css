@@ -63,35 +63,6 @@ h3 {
   border-bottom: 2px solid #cccccc;
 }
 
-#logo {
-  float: left;
-  width: 250px;
-  height: 90px;
-  font-family: Georgia, Times, "Times New Roman", serif;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 90px;
-  color: #ffffff;
-  text-align: center;
-  text-decoration: none;
-  background: #4aaaa5;
-}
-
-nav {
-  float: right;
-  margin-top: 25px;
-}
-
-nav a {
-  display: inline-block;
-  padding-left: 15px;
-  margin-left: 15px;
-  line-height: 18px;
-  color: #999;
-  text-decoration: none;
-  border-left: 1px solid #efefef;
-}
-
 nav a:first-child {
   border-left: 0 none;
 }
@@ -216,32 +187,72 @@ input[type=submit] {
   border: 0 none;
 }
 
-@media screen and (min: 640px){
-  body {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 18px;
-    line-height: 34px;
-    color: #777777;
-    background: url("../images/cat.jpg");
+  @media screen and (max-width: 768px){
+    #logo {
+      display: block;
+      margin: auto;
+      height: 80px;
+      font-family: Georgia, Times, "Times New Roman", serif;
+      font-size: x-large;
+      font-weight: 700;
+      line-height: 90px;
+      color: #ffffff;
+      text-align: center;
+      text-decoration: none;
+      background: #4aaaa5;
+    }
+
+    nav {
+      display: block;
+      margin: auto;
+      text-align:center;
+    }
+    
+    nav a {
+      display: inline-block;
+      padding-left: 15px;
+      margin-left: 15px;
+      margin-right: 25px;
+      line-height: 18px;
+      color: #999;
+      text-decoration: none;
+      border-left: 1px solid #efefef;
+      margin: auto;
+    }
+
   }
 
-}
-@media screen and (max-width: 768px){
-  body {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 18px;
-    line-height: 34px;
-    color: #777777;
-    background: url("../images/technics-q-c-640-480-5.jpg");
+  @media screen and (min-width: 768px) {
+    #logo {
+      float: left;
+      width: auto;
+      height: 90px;
+      font-family: Georgia, Times, "Times New Roman", serif;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 90px;
+      color: #ffffff;
+      text-align: center;
+      text-decoration: none;
+      background: #4aaaa5;
+    }
+
+
+    nav {
+      float: right;
+      margin-top: 25px;
+    }
+    
+    nav a {
+      display: inline-block;
+      padding-left: 15px;
+      margin-right: 25px;
+      margin-left: 15px;
+      line-height: 18px;
+      color: #999;
+      text-decoration: none;
+      border-left: 1px solid #efefef;
+    }
+
   }
 
-}
-@media screen and (max-width: 980px){
-  body {
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 18px;
-    line-height: 34px;
-    color: #777777;
-    background: url("../images/technics-q-c-640-480-9.jpg");
-  }
-}
